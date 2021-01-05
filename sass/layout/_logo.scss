@@ -1,0 +1,28 @@
+.nav-logo {
+  color: #000000;
+  text-decoration: none;
+  font-family: var(--logo-font);
+  @include fontOptions(700, 26px, 31px);
+  letter-spacing: 0.03em;
+
+  margin-right: 93px;
+}
+
+.nav-logo span {
+  color: var(--accent-color);
+}
+
+.footer-logo {
+  display: inline-block;
+  margin-bottom: 20px;
+  color: var(--bg-color);
+  text-decoration: none;
+
+  font-family: var(--logo-font);
+  @include fontOptions(700, 26px, 31px);
+  letter-spacing: 0.03em;
+}
+
+.footer-logo span {
+  color: var(--accent-color);
+}
