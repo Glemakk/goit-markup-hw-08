@@ -422,7 +422,6 @@ img {
 }
 
 .features__item {
-  width: 450px;
   height: 226px;
 }
 
@@ -448,7 +447,6 @@ img {
 }
 
 .features__bg {
-  width: 450px;
   height: 120px;
   display: flex;
   align-items: center;
