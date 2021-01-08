@@ -15,14 +15,15 @@
 @import "./components/modal";
 @import "./components/btn";
 @import "./components/uppertitle";
+@import "./components/block";
 
 // layout
 
 @import "./layout/header";
 @import "./layout/index/hero";
 @import "./layout/index/features";
-// @import "./layout/index/about";
-// @import "./layout/index/team";
+@import "./layout/index/about";
+@import "./layout/index/team";
 // @import "./layout/index/clients";
 // @import "./layout/portfolio/filters";
 // @import "./layout/portfolio/portfolio";
