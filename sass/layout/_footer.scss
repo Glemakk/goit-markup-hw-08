@@ -2,14 +2,39 @@
   background-color: var(--footer-bg-color);
   padding-top: 60px;
   padding-bottom: 60px;
+
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
 }
 
 .footer .container {
-  @include centeredFlex(baseline);
+  @media screen and (min-width: 1200px) {
+    @include centeredFlex(baseline);
+  }
+}
+
+.footer-flex-set {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+  }
+}
+
+.footer-left-side {
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 60px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: inline-block;
+  }
 }
 
 .address {
-  width: 231px;
+  @media screen and (min-width: 1200px) {
+    width: 231px;
+  }
 }
 
 .address__list-item:not(:last-child) {
@@ -30,13 +55,25 @@
 }
 
 .footer-social-side {
-  margin-left: 70px;
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 60px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: inline-block;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-left: 70px;
+  }
 }
 
 .footer-social-side_list {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   margin-top: 20px;
+
+  @media screen and (min-width: 1200px) {
+    justify-content: space-between;
+  }
 }
 
 .footer-social-side__item:not(:last-child) {
@@ -46,12 +83,17 @@
 /* ---- Правый блок Подпишись ---- */
 
 .footer-right-side {
-  margin-left: 93px;
+  @media screen and (min-width: 1200px) {
+    margin-left: 93px;
+  }
 }
 
 .form {
-  display: flex;
   margin-top: 20px;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    margin-top: 20px;
+  }
 }
 
 .form__input {
@@ -72,15 +114,29 @@
 }
 
 .form__subscribe {
-  display: flex;
-  width: 358px;
+  max-width: 450px;
   height: 50px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    width: 358px;
+  }
 }
 
 .subscribe-btn {
-  margin-left: 12px;
   display: flex;
   justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  @media screen and (max-width: 1199px) {
+    margin-top: 20px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 12px;
+  }
 
   &::after {
     content: "";
