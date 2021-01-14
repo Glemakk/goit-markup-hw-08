@@ -91,3 +91,17 @@
     margin-right: 10px;
   }
 }
+
+.mobile-team {
+  @media screen and (max-width: 767px) {
+    display: block;
+    max-width: 450px;
+    width: 100%;
+  }
+}
+
+.mobile-team-set__img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}

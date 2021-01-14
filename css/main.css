@@ -782,6 +782,20 @@ img {
   margin-right: 10px;
 }
 
+@media screen and (max-width: 767px) {
+  .mobile-team {
+    display: block;
+    max-width: 450px;
+    width: 100%;
+  }
+}
+
+.mobile-team-set__img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 .clients-title {
   font-weight: 700;
   font-size: 28px;
