@@ -84,7 +84,7 @@ ol {
 
 img {
   display: block;
-  min-width: 100%;
+  max-width: 100%;
   height: auto;
 }
 
@@ -190,9 +190,15 @@ img {
   transition: transform 400ms cubic-bezier(0.4, 0, 0.2, 1) 150ms, opacity 300ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media screen and (max-width: 340px) {
+  .modal {
+    padding: 29px;
+  }
+}
+
 @media screen and (min-width: 550px) and (max-width: 1020px) and (orientation: landscape) {
   .modal {
-    top: 100%;
+    top: 90%;
   }
 }
 
@@ -466,7 +472,8 @@ img {
 
 .header {
   position: relative;
-  padding: 10px 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
   border-bottom: 1px solid #ececec;
 }
 
@@ -515,19 +522,19 @@ img {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) {
   .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/bg-tablet.jpg");
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1199px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (max-width: 1199px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/bg-tablet@2x.jpg");
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) and (min-device-pixel-ratio: 3), screen and (min-width: 768px) and (max-width: 1199px) and (min-resolution: 288dpi), screen and (min-width: 768px) and (max-width: 1199px) and (min-resolution: 3dppx) {
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 3), screen and (min-width: 768px) and (min-resolution: 288dpi), screen and (min-width: 768px) and (min-resolution: 3dppx) {
   .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/bg-tablet@3x.jpg");
   }
@@ -816,12 +823,6 @@ img {
     max-width: 450px;
     width: 100%;
   }
-}
-
-.mobile-team-set__img {
-  display: block;
-  max-width: 100%;
-  height: auto;
 }
 
 .clients-title {
