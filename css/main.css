@@ -1001,12 +1001,6 @@ img {
   padding: 20px 21px;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .portfolio-title-block:nth-child(1) {
-    height: 146px;
-  }
-}
-
 .portfolio-title-block__title {
   font-weight: 700;
   font-size: 18px;
@@ -1052,6 +1046,12 @@ img {
   letter-spacing: 0.03em;
   padding: 63px 24px;
   color: var(--bg-color);
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .height {
+    height: 146px;
+  }
 }
 
 .footer {
@@ -1372,7 +1372,7 @@ img {
 
 @media screen and (min-width: 768px) {
   .nav__link.current::after {
-    margin-top: 28px;
+    margin-top: 29.5px;
   }
 }
 
@@ -1440,5 +1440,11 @@ img {
 .contacts-list__icon {
   fill: currentColor;
   margin-right: 10px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .contacts-list__icon {
+    margin-right: 8px;
+  }
 }
 /*# sourceMappingURL=main.css.map */

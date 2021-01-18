@@ -58,19 +58,7 @@
   border-left: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
   padding: 20px 21px;
-
-  &:nth-child(1) {
-    @media screen and (min-width: 768px) and (max-width: 1199px) {
-      height: 146px;
-    }
-  }
 }
-
-// @media screen and (min-width: 768px) and (max-width: 1199px) {
-//   .portfolio-title-block:first-child {
-//     height: 146px;
-//   }
-// }
 
 .portfolio-title-block__title {
   @include fontOptions(700, 18px, 36px);
@@ -113,4 +101,10 @@
   padding: 63px 24px;
 
   color: var(--bg-color);
+}
+
+.height {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    height: 146px;
+  }
 }
